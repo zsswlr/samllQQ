@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/recommend/recommend",
+    "pages/search/search",
+    "pages/chart/chart",
+    "pages/about/about",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#31c27c",
+    "navigationBarTitleText": "QQ音乐",
+    "backgroundColor": "#eeeeee",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 50
+  },
+  "tabBar": {
+    "selectedColor": "red",
+    "backgroundColor": "#eee",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/compare.png",
+        "selectedIconPath": "images/compare.png"
+      },
+      {
+        "pagePath": "pages/recommend/recommend",
+        "text": "推荐",
+        "iconPath": "images/earth.png",
+        "selectedIconPath": "images/earth.png"
+      },
+      {
+        "pagePath": "pages/chart/chart",
+        "text": "排行榜",
+        "iconPath": "images/service.png",
+        "selectedIconPath": "images/service.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜搜",
+        "iconPath": "images/original-image.png",
+        "selectedIconPath": "images/original-image.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "关于",
+        "iconPath": "images/service.png",
+        "selectedIconPath": "images/service.png"
+      }
+    ]
+  }
+}

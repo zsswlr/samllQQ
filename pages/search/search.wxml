@@ -1,0 +1,9 @@
+<!--pages/search/search.wxml-->
+<view style='height:60px;width:100%;background:#f4f4f4;padding-top:20px'>
+  <input type='text' style='border:1px solid #eed;background:white;height:40px' placeholder="Q 搜索" auto-focus/>
+</view>
+<text>热门搜搜</text>
+<view>
+<text bindtap='bumpDetail' wx:for="{{titles}}" style='margin-top:20px;margin-left:5%;float:left;width:40%;border:1px solid #eee;border-radius:10px'>{{item.k}}</text>
+
+</view>

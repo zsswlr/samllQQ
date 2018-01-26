@@ -1,0 +1,11 @@
+<block>
+<view bindtap='bumpDetail' style='margin-top:10px;background:#f4f4f4' wx:for="{{list}}">
+<image src='{{item.picUrl}}' style='width:40%' mode="widthFix"></image>
+<view style='float:right;width:60%'>
+<text>{{item.topTitle}}</text>
+<text wx:for="{{item.songList}}">
+{{item.songname}}
+</text>
+</view>
+</view>
+</block>

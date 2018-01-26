@@ -1,0 +1,23 @@
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-dots="true">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image bindtap="bumpDetail" src="{{item.picUrl}}" class="slide-image" width="355" />
+    </swiper-item>
+  </block>
+</swiper>
+<block>
+<text>电台</text>
+<view style='width:98%;'>
+   <view bindtap="bumpDetail" style='float:left;width:48%;margin-left:2%' wx:for="{{radioList}}">
+   <image style="width:100%" mode="{{mode}}" src="{{item.picUrl}}"></image>
+   <text>{{item.Ftitle}}</text>
+  </view>
+</view>
+</block>
+<text style='clear：both'>热门歌单</text>
+<view style='width:98%;'>
+   <view style='float:left;width:48%;margin-left:2%' bindtap="bumpDetail" wx:for="{{songList}}">
+   <image style="width:100%" mode="{{mode}}" src="{{item.picUrl}}"></image>
+   <text>{{item.songListDesc}}</text>
+  </view>
+</view>
